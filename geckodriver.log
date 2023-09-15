@@ -1,0 +1,42 @@
+1694739946707	geckodriver	INFO	Listening on 127.0.0.1:40653
+1694739947718	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr/bin/firefox" "--marionette" "-profile" "/home/AMBERJACK/y39ufxvolu/.synack/selenium.profile" "-no-remote"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694739948834	Marionette	INFO	Marionette enabled
+1694739948943	Marionette	INFO	Listening on port 43179
+Read port: 43179
+1694739949271	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript error: https://login.synack.com/assets/application-e7e0a29c0866067f4a5028ba79a1905db68fb6cd7a62f89999536b4556c784e7.js, line 1: SyntaxError: Element.matches: ':-internal-autofill-selected' is not a valid selector
+1694739966987	Marionette	INFO	Stopped listening on port 43179
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1694740055156	geckodriver	INFO	Listening on 127.0.0.1:56445
+1694740056162	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr/bin/firefox" "--marionette" "-profile" "/home/AMBERJACK/y39ufxvolu/.synack/selenium.profile" "-no-remote"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694740056783	Marionette	INFO	Marionette enabled
+1694740056839	Marionette	INFO	Listening on port 45417
+Read port: 45417
+1694740057007	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript error: https://login.synack.com/assets/application-e7e0a29c0866067f4a5028ba79a1905db68fb6cd7a62f89999536b4556c784e7.js, line 1: SyntaxError: Element.matches: ':-internal-autofill-selected' is not a valid selector
+1694740068917	Marionette	INFO	Stopped listening on port 45417
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1694740543574	geckodriver	INFO	Listening on 127.0.0.1:44889
+1694740544580	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr/bin/firefox" "--marionette" "-profile" "/home/AMBERJACK/y39ufxvolu/.synack/selenium.profile" "-no-remote"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694740545165	Marionette	INFO	Marionette enabled
+1694740545226	Marionette	INFO	Listening on port 41895
+Read port: 41895
+1694740545375	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript error: https://login.synack.com/assets/application-e7e0a29c0866067f4a5028ba79a1905db68fb6cd7a62f89999536b4556c784e7.js, line 1: SyntaxError: Element.matches: ':-internal-autofill-selected' is not a valid selector
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.synack.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.synack.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+JavaScript warning: https://platform.synack.com/vendors~client.af897f505983c218bbb3.js, line 310: Script terminated by timeout at:
+Kt@https://platform.synack.com/vendors~client.af897f505983c218bbb3.js:310:23480
+
+1694740676398	Marionette	INFO	Stopped listening on port 41895
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]

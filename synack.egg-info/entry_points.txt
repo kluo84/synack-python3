@@ -1,0 +1,3 @@
+[console_scripts]
+synack = synack.__main__:main
+
