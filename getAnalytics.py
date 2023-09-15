@@ -1,40 +1,54 @@
 #!/usr/bin/env python3
 
 from synack import synack
-import psycopg2
-import subprocess
-import sys
+from urllib.parse import urlparse
 
-n = len(sys.argv)
-s1 = synack()
+def connect(synack_instance):
+    """
+    Connect to Synack and perform registration.
+    """
+    synack_instance.getSessionToken()
+    synack_instance.registerAll()
+    synack_instance.getAllTargets()
 
-def connect():
-    s1.getSessionToken()
-    s1.registerAll()
-    s1.getAllTargets()
+def get_vuln_locations(synack_instance, codename):
+    """
+    Fetch analytics for a given codename and return a list of vuln_locations' paths.
+    """
+    analytics_data = synack_instance.getAnalytics(codename)
+    if analytics_data is None:
+        print(f"No analytics data found for codename: {codename}")
+        return []
 
-def analytics(codename):
-    print(codename)
-    analytics = s1.getAnalytics(codename)
-    analyticsList = []
-    for k in range(len(analytics)):
-        analyticsList.append(analytics[k])
-    with open(codename+"_analytics.txt", mode='wt', encoding='utf-8') as myfile1:
-        print(analyticsList)
-        myfile1.write('\n'.join(map(str,analyticsList)))
+    # Extract only the path from the vuln_location URL
+    return [urlparse(entry['vuln_location']).path for entry in analytics_data if 'vuln_location' in entry]
 
+def main():
+    s1 = synack()
+    connect(s1)
+    
+    categories = ["host", "web application", "mobile"]
+    all_vuln_locations = []
 
-if n > 1:
-    category = "Host"
-    connect()
-    codenames = s1.getCodenames(category)
-    codename = sys.argv[1]
-    analytics(codename)
-elif n > 2:
-    category = sys.argv[2]
-    connect()
-    codenames = s1.getCodenames(category)
-    codename = sys.argv[1]
-    analytics(codename)
-else:
-    print("Usage: %s target category" % (sys.argv[0]))
+    for category in categories:
+        codenames = s1.getCodenames(category)
+        for codename in codenames:
+            all_vuln_locations.extend(get_vuln_locations(s1, codename))
+
+    # Read existing wordlist
+    with open("./wordlist/synack-wordlist.txt", "r", encoding="utf-8") as file:
+        existing_wordlist = file.readlines()
+
+    # Append new paths to the wordlist
+    all_vuln_locations.extend(existing_wordlist)
+
+    # Remove duplicates and sort
+    unique_sorted_list = sorted(set(all_vuln_locations))
+
+    # Update the wordlist with unique and sorted entries
+    with open("./wordlist/synack-wordlist.txt", "w", encoding="utf-8") as file:
+        for location in unique_sorted_list:
+            file.write(location.strip() + "\n")
+
+if __name__ == "__main__":
+    main()

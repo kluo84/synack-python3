@@ -17,6 +17,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+#from selenium.webdriver import Firefox, DesiredCapabilities
+
 import configparser
 import time
 import pyotp
@@ -40,13 +42,11 @@ class synack:
         self.url_registered_summary = self.platform_url+"/api/targets/registered_summary"
         self.url_scope_summary = self.platform_url+"/api/targets/"
         self.url_activate_target = self.platform_url+"/api/launchpoint"
-        self.url_assessments = self.platform_url+"/api/assessments"
         self.url_vulnerabilities = self.platform_url+"/api/vulnerabilities"
         self.url_drafts = self.platform_url+"/api/drafts"
         self.url_unregistered_slugs = self.platform_url+"/api/targets?filter%5Bprimary%5D=unregistered&filter%5Bsecondary%5D=all&filter%5Bcategory%5D=all&sorting%5Bfield%5D=dateUpdated&sorting%5Bdirection%5D=desc&pagination%5Bpage%5D="
         self.url_profile = self.platform_url+"/api/profiles/me"
         self.url_analytics = self.platform_url+"/api/listing_analytics/categories?listing_id="
-        self.url_hydra = self.platform_url+"/api/hydra_search/search/"
         self.url_logout = self.platform_url+"/api/logout"
         self.url_notification_token = self.platform_url+"/api/users/notifications_token"
         self.url_notification_api = "https://notifications.synack.com/api/v2/"
@@ -269,6 +269,8 @@ class synack:
             category = "reverse engineering"
         if category == "sourcecode":
             category = "source code"
+        if category == "mobile":
+            category = "mobile"
         if category not in categories:
             raise Exception("Invalid category.")
         targets = []
@@ -506,17 +508,6 @@ class synack:
                     IPs.append(str(ip))
         return(IPs)
     
-##############################################
-## This gets all of your passed assessments ##
-##############################################
-    def getAssessments(self):
-        self.assessments.clear()
-        response = self.try_requests("GET", self.url_assessments, 10)
-        jsonResponse = response.json()
-        for i in range(len(jsonResponse)):
-            if jsonResponse[i]['written_assessment']['passed'] == True:
-                self.assessments.append(jsonResponse[i]['category_name'])
-            i+=1
 
 ##########################################################
 ## This gets endpoints from Web Application "Analytics" ##
@@ -647,7 +638,6 @@ class synack:
 #############################################
 
     def registerAll(self):
-        self.getAssessments()
         pageNum = 1
         next_page = True
         unregistered_slugs = []
@@ -657,7 +647,7 @@ class synack:
             jsonResponse = response.json()
             if (len(jsonResponse)!=0):
                 for i in range (len(jsonResponse)):
-                    if jsonResponse[i]["category"]["name"] in self.assessments:
+                    if jsonResponse[i]["category"]["name"] in ["Web", "Host", "Mobile", "API"]:
                         unregistered_slugs.append(str(jsonResponse[i]["slug"]))
                 pageNum += 1
             else:
@@ -839,24 +829,6 @@ class synack:
         else:
             return False
 
-###########
-## Hydra ##
-###########
-
-    def getHydra(self, codename):
-        slug = self.getTargetID(codename)
-        pageNum = 1
-        hydraResults = []
-        while True:
-            url_hydra = self.url_hydra +"?page=" +str(pageNum)+"&listing_uids="+slug+"&q=%2Bport_is_open%3Atrue"
-            response = self.try_requests("GET", url_hydra, 10)
-            hydraResponse = response.json()
-            if len(hydraResponse) == 0:
-                break
-            else:
-                hydraResults = hydraResults + hydraResponse
-                pageNum += 1
-        return hydraResults
 
 ###################
 ## Mission stuff ##

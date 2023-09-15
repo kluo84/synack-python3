@@ -1,8 +1,0 @@
-netaddr
-pathlib2
-pyotp
-requests
-selenium
-urllib3
-psycopg2-binary
-cmd2

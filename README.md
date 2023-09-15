@@ -1,25 +1,3 @@
-# Library for interacting with Synack API 
-This is a library and set of scripts that make SRT life a little easier when interacting with the platform from an LP+ linux commandline.
-* Connect to platform
-  * Stay connected to the platform
-* Register available targets
-* Connect to targets
-* Download targets' scope
-* Retrieve analytics from `Web Application` and `Host` targets
-* Download hydra findings
-* Retrieve target specific information:
-  * Client names
-  * Codenames
-  * Slugs
-  * Target types
-* Manage notifications
-
-# Acknowledgements
-Thank you Malcolm, Nicolas, and pmnh for making this better!
-
-# Configuration requirements 
-## Operating System
-This has been developed on LP+ (Linux). I have no idea if it will work on Windows. It might, but your mileage may vary. I do not use windows. If you do, and you want to test, please do. 
 
 ## Configuration Directories
 The required directory is `~/.synack`.
@@ -36,20 +14,11 @@ password = your.synack.password
 authy_secret = ABCDEFGHIJKLMNOPQRSTUVWXYZ======
 webhook_url = https://hooks.slack.com/services/...
 ```
-* login_wait
-  * Number of seconds to wait for the platform's website to be loaded before attempting to log in. Can take a while.
-* login_url
-  * This should stay as is, unless Synack changes something
-* platform_url
-  * Default: https://platform.synack.com, can be overridden here for other Synack platforms
-* email
-  * The email address you use to log into the platform
-* password
-  * The password you use to log into the platform
+
 * authy_secret
+
   * base32 secret for generating Authy tokens
-  * Guillaume Boudreau provide a nice [walk through](https://gist.github.com/gboudreau/94bb0c11a6209c82418d01a59d958c93) for getting this secret
-    * Follow the above to get Authy into debug mode, then use [THIS CODE](https://gist.github.com/louiszuckerman/2dd4fddf8097ce89594bb33426ab5e23#ok-thats-nice-but-i-want-to-get-rid-of-authy-now) to get your valid TOTP SECRET!
+  * use https://github.com/alexzorin/authy to get the base32 secret in the otpauth://totp/synack?digits=7&period=10&secret=base32
 * gecko true/false (default true) - if false, the `requests` module will be used for the login flow, instead of the geckodriver (works well on Windows)
 * proxy true/false (default false) - if true, route requests through a local proxy for debugging
 * proxyport (default 8080) - local proxy port used for debugging
@@ -102,8 +71,6 @@ This method reads a file disk location of `synack.tokenPath` and stores the file
 ## getAllTargets()
 This method pulls down a descriptive JSON on all targets. Most other methods rely on this JSON and should normally be the second function method called.
 
-## getAssessments()
-This method returns a list of all Synack assessments that have been completed.
 
 ## getCodenames(category, mission_only=False)
 This method takes two parameters and returns a list of codenames.

@@ -4,8 +4,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='synack',
-    version='0.1.0',
-    description='SynackAPI',
+    version='1.0',
+    description='Synack-python3',
     packages=find_packages(include=['synack', 'synack.*']),
     install_requires=[
         'netaddr',

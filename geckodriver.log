@@ -40,3 +40,21 @@ Kt@https://platform.synack.com/vendors~client.af897f505983c218bbb3.js:310:23480
 
 1694740676398	Marionette	INFO	Stopped listening on port 41895
 JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1694744633459	geckodriver	INFO	Listening on 127.0.0.1:54945
+1694744634465	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr/bin/firefox" "--marionette" "-profile" "/home/AMBERJACK/y39ufxvolu/.synack/selenium.profile" "-no-remote"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694744635087	Marionette	INFO	Marionette enabled
+1694744635152	Marionette	INFO	Listening on port 41887
+Read port: 41887
+1694744635282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript error: https://login.synack.com/assets/application-e7e0a29c0866067f4a5028ba79a1905db68fb6cd7a62f89999536b4556c784e7.js, line 1: SyntaxError: Element.matches: ':-internal-autofill-selected' is not a valid selector
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.synack.com."
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://platform.synack.com/vendors~client.af897f505983c218bbb3.js, line 336: Script terminated by timeout at:
+f@https://platform.synack.com/vendors~client.af897f505983c218bbb3.js:336:15920
+
+1694755209789	Marionette	INFO	Stopped listening on port 41887
