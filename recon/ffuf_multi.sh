@@ -25,5 +25,5 @@ while IFS= read -r domain; do
     output_file="${clean_domain}_ffuf_results.txt"
    
     # Run ffuf against the domain and write the results to the domain-specific output file
-    ffuf -u "$domain/FUZZ" -w ~/Tools/synack-python3/wordlist/synack-wordlist.txt -o $output_file -of csv
+    ffuf -u "$domain/FUZZ" -w ~/Tools/synack-python3/wordlist/synack-wordlist.txt --mc=200 --fl=1 -o $output_file -of csv
 done < "$input_file"

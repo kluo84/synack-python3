@@ -28,27 +28,36 @@ def main():
     connect(s1)
     
     categories = ["host", "web application", "mobile"]
-    all_vuln_locations = []
+    new_vuln_locations = []
+
+
 
     for category in categories:
         codenames = s1.getCodenames(category)
         for codename in codenames:
-            all_vuln_locations.extend(get_vuln_locations(s1, codename))
+            new_vuln_locations.extend(get_vuln_locations(s1, codename))
 
     # Read existing wordlist
     with open("./wordlist/synack-wordlist.txt", "r", encoding="utf-8") as file:
         existing_wordlist = file.readlines()
 
-    # Append new paths to the wordlist
-    all_vuln_locations.extend(existing_wordlist)
+    # Convert existing wordlist to set for faster lookup
+    existing_wordlist_set = set(line.strip() for line in existing_wordlist)
 
-    # Remove duplicates and sort
-    unique_sorted_list = sorted(set(all_vuln_locations))
+    # Add only unique paths that aren't already in the existing wordlist
+    for location in new_vuln_locations:
+        stripped_location = location.strip().lstrip('/')  # Remove leading slashes
+        if stripped_location not in existing_wordlist_set:
+            existing_wordlist_set.add(stripped_location)
+
+    # Convert the set to list and sort
+    unique_sorted_list = sorted(existing_wordlist_set)
 
     # Update the wordlist with unique and sorted entries
     with open("./wordlist/synack-wordlist.txt", "w", encoding="utf-8") as file:
         for location in unique_sorted_list:
-            file.write(location.strip() + "\n")
-
+            file.write(location + "\n")
+            
 if __name__ == "__main__":
     main()
+
