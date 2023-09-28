@@ -95,6 +95,7 @@
 %u002e/WEB-INF
 %u002e/WEB-INF/web.xml
 'accesskey%3d'X'onclick='alert(document.domain)'
+(A(%22onerror='alert%60%60'testacd))/account/reconciliation/375939
 (Query  AddUsersToTeam)
 (Query  GetProductCapabilityScore)
 (Query GetDevOpsMaturityProgress)
@@ -890,7 +891,9 @@
 10.251.41.180
 10.251.41.209
 10.251.42.101
+10.251.42.109
 10.251.42.110
+10.251.42.12
 10.251.42.120
 10.251.42.15
 10.251.42.16
@@ -898,8 +901,10 @@
 10.251.42.37
 10.251.42.38
 10.251.42.52
+10.251.42.70
 10.251.42.73
 10.251.42.89
+10.251.42.92
 10.251.44.11
 10.251.44.4
 10.251.46.57
@@ -993,6 +998,8 @@
 10.251.89.61
 10.251.89.70
 10.251.89.73
+10.251.90.10
+10.251.91.7
 10.251.98.8
 10.254.47.13
 10.32.98.121
@@ -2172,6 +2179,7 @@
 192.35.79.232
 192.35.79.246
 192.35.79.249
+192.35.79.33
 192.35.79.35
 192.35.79.65
 192.35.79.84
@@ -2593,6 +2601,7 @@
 205
 205.210.217.13
 205.210.217.24
+205.254.142.234
 2058jcpvnh
 206
 206.17.108.215
@@ -3211,6 +3220,7 @@
 338
 339
 34
+34.102.196.22
 34.102.212.254
 34.107.213.253
 34.117.182.43
@@ -3218,9 +3228,11 @@
 34.117.211.41
 34.117.231.65
 34.117.69.19
+34.120.132.62
 34.120.241.198
 34.120.78.40
 34.149.57.239
+34.160.10.217
 34.199.164.210
 34.201.133.158
 34.201.134.18
@@ -3269,6 +3281,7 @@
 349
 35
 35.161.197.127
+35.190.28.112
 35.192.203.69
 35.244.149.201
 35.245.127.94
@@ -5227,6 +5240,8 @@
 64
 64.197.172.226
 64.209.235.38
+64.79.154.70
+64.79.154.71
 640
 6400
 641
@@ -5995,6 +6010,8 @@ Account
 Account/
 Account/AccessDenied
 Account/Account/Login
+Account/AddAdvisorToProfile
+Account/CheckEmailAlreadyExists
 Account/CreditCard
 Account/CreditCard/Edit/1
 Account/CreditCard/Edit/56810
@@ -6019,9 +6036,11 @@ Account/LoginSubmit
 Account/LoginVerification
 Account/Logon
 Account/Manage
+Account/ManageStudents
 Account/MyAccount
 Account/Register
 Account/Register.aspx
+Account/RegisterAccount
 Account/RegisterNoPassword1
 Account/RegisterStep1
 Account/RegisterStep2
@@ -6070,6 +6089,7 @@ Admin/School.aspx
 Admin/Status.aspx
 Admin/Students/LookupId.aspx
 Admin/User
+Admin/User.aspx
 Admin/User/Logon
 Admin/Users.aspx
 Admin/signin.aspx
@@ -6756,6 +6776,7 @@ CaseManager/welcome/displayCmisConfig.jsp
 CaseTracker/AttachDocument.aspx
 CaseTracker/CaseTrackMain.aspx
 CaseTracker/CaseWorkList.aspx
+CaseworkHandler.ashx
 Catalog/DeleteProductAvailability
 Catalog/UpdateProductBasicDetails/1
 Catalog/UploadImage
@@ -8068,6 +8089,8 @@ Home/proof_of_concept_hfg7632
 Home/uploader
 HomePage
 HomePage/passwordreset.asp
+HomePages/HomeAdmin.aspx
+HomePages/HomeNews.aspx
 HospitalGoingRates.aspx
 HotlineAlertView.aspx
 HouseholdSearch.aspx
@@ -8473,6 +8496,7 @@ MFA/CreateAccount.aspx
 MFClientHelp/BackOffice/CD_Placement_Client_System_Help.htm
 MFClientHelp/Sales/CD_Placement_Client_System_Help.htm
 MFClientHelp/Users/CD_Placement_Client_System_Help.htm
+MFM/EventManagement.aspx
 MHAConfigurator
 MHAConfigurator/Bulkupload/Download
 MHAConfigurator/Bulkupload/Index
@@ -8552,6 +8576,7 @@ Mahesh49/PizzaHut/blob/8fb6fb795c31901f8a06ac3b9db8b9dbb79544f8/PizzaHut/StepDef
 Mail
 Mail/form
 Mail/send
+Mailings/MailRate.aspx
 MainPage/Administrator/EditUser.cfm
 MainPage/PopupMenus/ProjectPermissions.cfm
 Mainframe
@@ -8689,6 +8714,7 @@ MobileMembership/services/application
 MobileMembership/services/application/memberInfo
 Modules
 Modules/ARGE/ajxProjeGetir.asp
+Modules/Accounts/(A(%22onerror='alert%60%60'testacd))/BulkAssignAcctValues.aspx
 Modules/Accounts/Assignment.aspx
 Modules/AracTakip/AddVehicle.asp
 Modules/AracTakip/UpdateDriver.asp
@@ -8697,7 +8723,14 @@ Modules/AracTakip/vehicles.asp
 Modules/ClixDagitim/EkipmanAl.asp
 Modules/ClixDagitim/ajxBilgiGetir.asp
 Modules/DAI/ImportExcelTable.aspx
+Modules/DAI/InterfaceStatusGrid.aspx
 Modules/DAI/JobStatus.aspx
+Modules/DAI/UploadedAccountInfoAdminGrid.aspx
+Modules/DAI/UploadedCurrencyGrid.aspx
+Modules/DAI/UploadedJournalDependentValidation.aspx
+Modules/DAI/UploadedJournalStaticDesc.aspx
+Modules/DAI/UploadedJournalValidation.aspx
+Modules/DAI/UploadedXCurrencyGrid.aspx
 Modules/E-Glass/ajax2.asp
 Modules/E-Glass/ajax3.asp
 Modules/E-Glass/ajaxKalemBilgileriGetir.asp
@@ -8716,6 +8749,7 @@ Modules/Laboratory/ajx-FWF-4-ParcaAdiGetir.asp
 Modules/Laboratory/tgTestCihazda.asp
 Modules/Matching/GLMappingDetail.aspx
 Modules/Matching/MatchSetDetail.aspx
+Modules/Matching/MatchSetFilterFields.aspx
 Modules/Matching/TxnDetailAudit.aspx
 Modules/Production/ajxKalipGetir.asp
 Modules/Production/ajxParcaGetir.asp
@@ -8724,15 +8758,22 @@ Modules/Recine/ajxKokteylListeGetir.asp
 Modules/Recine/ajxMalzemeDegazMakina.asp
 Modules/Recine/ajxRecineOperasyonMakina.asp
 Modules/Reconciliations
+Modules/Reconciliations/AddComment.aspx
 Modules/Reconciliations/Evaluations.aspx
 Modules/Reconciliations/ExecGrid.aspx
 Modules/Reconciliations/Items/AllItems.aspx
 Modules/Reports/EditReport.aspx
+Modules/Reports/ReportsMenu.aspx
+Modules/Requests/(A(%22%20onerror=alert%601337%60%20%22())/AdminProcessRequests.aspx
+Modules/Requests/AdminPastRequests.aspx
+Modules/Requests/AdminProcessRequests.aspx
 Modules/Requests/UserMakeRequests.aspx
 Modules/Requests/UserPastRequests.aspx
 Modules/Settings/AdminBulkEmail.aspx
 Modules/Settings/CertChecklistTemplateDetail.aspx
+Modules/Statistics/(Z('=%22%20onerror=alert%60111%60%20%22aaa())/Level2Stats.aspx
 Modules/SubContractorPortal/MutKayitOnayaGonder.asp
+Modules/Users/(A(%22onerror='alert%601%60'testacd))/UserBulkAssignment.aspx
 Modules/Users/UserDetail.aspx
 Modules/Users/UserDetail.aspx/Page_AssignmentExpand
 Modules/Users/UserDetail.aspx/Page_GetActivity
@@ -8955,6 +8996,7 @@ OA_HTML/jsp/fnd/aolj_native_conn_test.jsp
 OA_HTML/jsp/fnd/aoljtest.jsp
 OA_HTML/jtfLOVInProcess.jsp
 OA_HTML/jtfNotesAllTest.jsp
+OA_HTML/jtfasuh.jsp
 OA_HTML/jtfbAssignResps.jsp
 OA_HTML/jtffmOcmQuerySumryMn.jsp
 OA_HTML/jtffmOcmTmplSumryMn.jsp
@@ -8972,6 +9014,7 @@ OA_HTML/oramipp_lpr
 OA_HTML/ozfInvoiceLov.jsp
 OA_HTML/ozfVendorLov
 OA_HTML/ozfVendorLov.jsp
+OA_HTML/pvxCRgpPrtAddnlInfo.jsp
 OA_HTML/pvxLoctrAddrValidation.jsp
 OA_HTML/pvxLoctrDrivingDirections.jsp
 OA_HTML/pvxLoctrMap.jsp
@@ -9360,6 +9403,7 @@ ParticipantSurvey
 ParticipantSurvey/GetUserInfo
 Partner/Create
 Partner/Edit
+PartyMasterServiceInternal/basic
 Password.properties
 PasswordRulesService
 PasswordRulesService/rules
@@ -9368,6 +9412,7 @@ Patient/
 PayerAdminPortalGuide.pdf
 PaymentGateway
 PaymentGateway/AutoReloadProperties
+PennDOTFormsHandler.ashx - GetSubject Function
 Peps
 Peps/PreferenceCenters/Pepsiworld
 Peps/PreferenceCenters/Pepsiworld/ForgotPassword.aspx
@@ -13143,6 +13188,7 @@ account/*
 account/49f5e588-44b8-4f05-84a5-a0dd3bf54158/how-to-prepare
 account/DV/Handlers/AJAXPerformanceHandler4.ashx
 account/Login
+account/PasswordReset
 account/UpdateContactInformation
 account/UpdatePassword
 account/UpdateUsername
@@ -13213,7 +13259,10 @@ account/profile/communications/subscribers/sms
 account/profile/communications/update
 account/profile/updatePersonalInfo
 account/reconciliation/1
+account/reconciliation/376778
+account/reconciliation/<id>
 account/reconciliation/[id]
+account/reconciliation/{ID}
 account/register
 account/register.htm
 account/reset
@@ -13859,6 +13908,7 @@ adelphi
 adesso-mobile
 adf
 adfile
+adfs
 adfs/ls/IdpInitiatedSignOn.aspx
 adgenie
 adgo
@@ -16876,6 +16926,7 @@ api/Admin/User
 api/Admin/User/GetList
 api/Advisor/Investors/[investorid]/documents
 api/Aler
+api/AperiodicReconciliationDocument/delete
 api/AperiodicReconciliationDocument/download
 api/AperiodicReconciliationDocument/upload
 api/ApplianceDeliveryServices/v1
@@ -17393,6 +17444,8 @@ api/ccmt/v1/playlist-content
 api/ccmt/v1/send-sms
 api/ccmt/v2
 api/ccmt/v2/playlist-content
+api/cdil-task/1.3/tasks/[tasid]
+api/cdil-task/1.3/tasks/[taskid]/document-metadata
 api/cfo/articles/12/pdf
 api/cfo/articles/[ID]/pdf
 api/cfo/tools/847
@@ -17702,6 +17755,7 @@ api/customers/3078647a-dd50-4369-9704-65d235cbab59/actions/associate-subscriptio
 api/customers/3078647a-dd50-4369-9704-65d235cbab59/integrations
 api/customers/3078647a-dd50-4369-9704-65d235cbab59/integrations/
 api/customers/3078647a-dd50-4369-9704-65d235cbab59/sensor-states/
+api/customers/3078647a-dd50-4369-9704-65d235cbab59/side-recordings
 api/customers/3078647a-dd50-4369-9704-65d235cbab59/subscriptions
 api/customers/619f572f25050936d202043b
 api/customers/<custommer-id>integrations
@@ -17911,6 +17965,7 @@ api/datastores/v2/collections/$collectionID/documents/$documentID
 api/datastores/v2/collections/7722aa70-8416-4b93-a5ef-611e61c8d4f8/documents
 api/datastores/v2/collections/7722aa70-8416-4b93-a5ef-611e61c8d4f8/documents/query
 api/dataview-strings
+api/dataview-strings/
 api/db.php~
 api/db/new
 api/db/new/users.sql
@@ -18067,6 +18122,7 @@ api/faq-feedback
 api/faq-question/image/upload
 api/feed/report/62ffd7dea44bec5655ed55e9
 api/feedback
+api/fetch
 api/file
 api/file-transfer/upload
 api/file/[ID]
@@ -18128,6 +18184,8 @@ api/graphql:Profile
 api/group
 api/group/<ID>
 api/group/<ID>/sensors
+api/grouped-assignments/<ID>
+api/grouped-assignments/<ID>/count
 api/groups
 api/groups/all/dataset/AEVI_recon_details
 api/groups/{GroupId}
@@ -18670,7 +18728,12 @@ api/report-schedules/<ScheduleID>
 api/report.json
 api/report_presets
 api/reporting/execute
+api/reportingv2/deletereportlog
+api/reportingv2/export/2659560/csv
+api/reportingv2/export/<ID>/csv
+api/reportingv2/getreport/<ID>
 api/reportingv2/getreportpreviewdata
+api/reportingv2/getusers
 api/reportingv2/runreport
 api/reportingv2/savereport
 api/reports
@@ -18789,6 +18852,7 @@ api/service-tests/test-profiles
 api/serviceOptions
 api/serviceOptions/
 api/services
+api/services/accountmanagement/edit
 api/services/app/Account/Delete
 api/services/app/Account/Get
 api/services/app/Account/GetAll
@@ -19518,6 +19582,7 @@ api/v1/getgneregistersmock
 api/v1/getuserLoginDetails
 api/v1/gitlab
 api/v1/gitlab/repositories
+api/v1/gpcs/templates/<id>
 api/v1/guid/getguid/124
 api/v1/guid/getguid/124/
 api/v1/guid/what_is_my_guid_uid
@@ -19698,12 +19763,16 @@ api/v1/policies/definition/none
 api/v1/policies/table
 api/v1/principal
 api/v1/product
+api/v1/product-ref-price
 api/v1/product/6be4b031-e925-401e-b13e-545dc2d2f585
 api/v1/product/[Product ID]
 api/v1/product/[ProductID]
 api/v1/product/[productId]
 api/v1/product/xxxxx-xxxx-xxxx-xxxxxxx
 api/v1/product/{:id}
+api/v1/products/396
+api/v1/products/93
+api/v1/products/<id>
 api/v1/profile
 api/v1/profile/agent/2001/revoke-invitation
 api/v1/profile/attach-to-agent
@@ -19733,6 +19802,8 @@ api/v1/reset/request
 api/v1/resetpassword
 api/v1/resources/tags
 api/v1/rpc
+api/v1/rules/856
+api/v1/rules/<ID>
 api/v1/salesforce/1
 api/v1/scenarios
 api/v1/scripts/config.js
@@ -19752,6 +19823,7 @@ api/v1/shipment/securityQuestions
 api/v1/signup
 api/v1/sites/[id]
 api/v1/sites/addac40f-acf9-4aef-86b8-20f4fa74aba3
+api/v1/sites/own
 api/v1/slackCacheRefresh
 api/v1/slackChannels
 api/v1/smedetails
@@ -22978,6 +23050,12 @@ awp
 awpcp
 awredir
 aws
+aws/*
+aws/dnszone_csv.txt
+aws/dnszone_hosts.txt
+aws/dnszone_hosts_IP.txt
+aws/dnszone_hosts_NAME.txt
+aws/dnszone_report.txt
 aws_hit
 aws_signed_urls
 aws_signed_urls/new
@@ -26186,6 +26264,7 @@ bundle/bookingV5.04eb8d6b922432576afa.js
 bundle/waiting.c9cb6835941db306530f.js
 bundled-libs
 bundles
+bundles/
 bundles/*
 bundles/MiFieldTrial
 bundles/NutriCropRx
@@ -27306,6 +27385,7 @@ carcaixent
 carcelen
 card
 card-designs
+card-manager/cards
 card-scripts
 cardPointInquiry
 cardedeu
@@ -29856,6 +29936,7 @@ classic/CodeValidator
 classic/CodeValidator/ValidateCode
 classical
 classicalsearch
+classicapi/doc/
 classiccarnew
 classiccarold
 classics
@@ -30236,8 +30317,10 @@ clusterjsp
 clusters
 clusters/b5924a42-6d26-4500-b6ce-cf4a6e1b6d78
 clusters/dev
+clusters/dev/administration/cluster-license
 clusters/dev/clients
 clusters/dev/maps
+clusters/dev/maps/SG_SURFACES
 clusters/dev/members
 cm
 cm-admin
@@ -32298,6 +32381,11 @@ conversation-service/swagger-ui/index.html
 conversations
 conversations/85kq:5rz57qc:28wgkpwqx/message
 conversations/8xb:5f62cr2:2cghpw0zl/message
+conversations/{conversation_id}/messages
+conversations/{conversation_id}/story
+conversations/{conversation_id}/tracker
+conversations/{conversation_id}/tracker/events
+conversations/{conversation_id}/trigger_intent
 converse
 conversie
 conversion
@@ -39139,6 +39227,7 @@ empwellfit/ApplicationDocuments2018/AFKW-LUP.aspx
 empwellfit/ApplicationDocuments2018/AFKW-MNU.aspx
 empwellfit/ApplicationDocuments2018/Admin.aspx
 empwellfit/ApplicationDocuments2018/Search.aspx
+empwellfit/ApplicationDocuments2018/process.asp
 empwellfitAPP
 empwellfitAPP/ApplicationDocuments2022
 empwellfitAPP/ApplicationDocuments2022/EformDotDot.html
@@ -40356,6 +40445,10 @@ esop/toolkit/registration
 esop/toolkit/registration/emailValidationCode.si
 esources/res/xml/firebase_remote_config_details.xml
 esp
+esp-forecast-manager/v1/forecasts/files
+esp-forecast-manager/v1/forecasts/import-forecasts/details/forecast-import-template
+esp-forecast-manager/v1/forecasts/template
+esp-plan-manager/v2/plans
 esp/A
 esp/A/CollectMetrics.aspx
 esp_parti
@@ -43859,6 +43952,9 @@ fudforum2
 fudosan
 fuego
 fuel
+fuel-orders/
+fuel-orders/orders
+fuel-prices/prices
 fuelcells
 fuengirola
 fuenlabrada
@@ -55786,6 +55882,7 @@ graphix
 graphql
 graphql  -
 graphql  [CartbyID]
+graphql (comment)
 graphql [AddToCart]
 graphql [SetShippingMode]
 graphql [billToAddress]
@@ -65724,12 +65821,16 @@ itm
 itm/-
 itm/-/182578486395
 itm/-/182665153378
+itm/164984683616
 itm/181678164653
 itm/183117767543
+itm/195925322147
 itm/2017-PETER-PARKER-SPECTACULAR-SPIDER-MAN-1-VARIANT-EDITION-MARVEL-NM
 itm/2017-PETER-PARKER-SPECTACULAR-SPIDER-MAN-1-VARIANT-EDITION-MARVEL-NM/282535455467
+itm/314837906384
 itm/354021365471
 itm/<item-id>
+itm/<item_id>
 itm/Apple-MacBook-Air-13-3-1-6-GHz-Intel-Core-i5-8-GB-128-GB-SSD-MMGF2D-A
 itm/Apple-MacBook-Air-13-3-1-6-GHz-Intel-Core-i5-8-GB-128-GB-SSD-MMGF2D-A/401306088833
 itm/Parrot-Airborne-Night-Minidrone-Blaze
@@ -70399,6 +70500,7 @@ main.8141b82439911757a334.js
 main.854675b958863495e7dd.js
 main.8547a1f0d63177d7121e.js
 main.912583d936b658f84165.js
+main.9e245f8d4890b019ca44.js
 main.aad590c5ad73d519.js
 main.af59d659633be46053a7.js
 main.b7a16079f687a12e210d.js
@@ -79633,7 +79735,10 @@ passthru
 passwd
 passwd_group
 passwd_group/group.txt
+passwd_group/log_hosts_dns.txt
 passwd_group/passwd.txt
+passwd_group/pc_and_user_list.txt
+passwd_group/pc_and_user_list_2.txt
 passwds
 password
 password-policy
@@ -79970,6 +80075,7 @@ pdf/ic/<filename>.pdf
 pdf/network
 pdf/network/bc_appointment_reapp.pdf
 pdf/network/ppo_appointment_reapp.pdf
+pdf/pdf.aspx
 pdf/standards/manual
 pdf/standards/manual/bcchp_provider_manual.pdf
 pdf/standards/manual/hmo_claims_processing.pdf
@@ -83845,6 +83951,7 @@ processapi
 processapi/accounts-profile/v2.0/address/validation
 processapi/accounts-profile/v2.0/profile/address
 processapi/delegate-management-api/v1.0/delegates/summary
+processapi/lending-payments/lending/v2.0/payment
 processapi/linked-account-repository/money-movement/v1.0/linked-account-repository
 processapi/linked-account-repository/money-movement/v1.0/linked-account-repository/
 processapi/zelle/money-movement/v2.0/zelle/update-customer-data
@@ -87050,6 +87157,8 @@ reportcard
 reportdownload
 reportedit/1
 reportedit/82241eb5-63d1-4d25-b5b1-85d4e9f0c1dd
+reportedit/<id>
+reportedit/{ID}
 reporter
 reporters
 reportes
@@ -93199,6 +93308,7 @@ sitecore/api/ssc/Beacon/Service/beacon/trackPageVisit
 sitecore/shell/webservice/service2.asmx
 sitecore/xdb.
 sitecore_files
+sitecore_xaml.ashx/-/xaml/Sitecore.Xaml.Tutorials.Styles.Index
 sitecrm
 sitecrypt
 sitedata
@@ -95666,6 +95776,7 @@ storage/temp/
 storage/temp/144-getitem+call.txt
 storage/temp/2726-result.txt
 storage/temp/419-sellxml.txt
+storage/{{base64}}
 storageapi
 storageapi/api/v3.0/4600721
 storageapi/api/v3.0/4600721/search
@@ -97424,6 +97535,9 @@ tb
 tb_inline
 tba
 tbadmin
+tbank/ajax_request/
+tbank/user/login.html
+tbank/user/tbank/rest/monthly-statement/details.json
 tbase
 tbb
 tbbch
@@ -98156,6 +98270,7 @@ testing
 testing-area
 testing-article
 testing-forum
+testing/pr/20/2
 testing1
 testing1/url2/checks3
 testing1/url2/checks3/98711
@@ -102022,6 +102137,7 @@ uploadimg
 uploadphoto
 uploadphotos
 uploadpic
+uploadportal/config.json
 uploadresume
 uploads
 uploads/*
@@ -103472,6 +103588,7 @@ v2.0/api/tenants/1073/sites/16177384574190027/siteciphers
 v2.0/api/tenants/1073/templates
 v2.0/api/tenants/1073/templates/ntp
 v2.0/api/tenants/1073/users
+v2.0/api/tenants/1073/vfflicenses/16074012160410205/tokens
 v2.0/api/tenants/1073/wanoverlays
 v2.1
 v2.1/api/tenants/1073
@@ -106461,6 +106578,7 @@ webguide
 webhelp
 webhits
 webhome
+webhooks/rest/webhook
 webhost
 webhosting
 webhundeskolen
