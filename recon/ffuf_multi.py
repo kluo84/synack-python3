@@ -20,7 +20,7 @@ def run_ffuf(domain):
         cmd = [
             "ffuf",
             "-u", f"{domain}/FUZZ",
-            "-w", os.path.expanduser("~/Tools/synack-python3/wordlist/synack-wordlist.txt"),
+            "-w", os.path.expanduser("~/Tools/synack-python3/wordlist/tmp.txt"),
             "--mc=200", "--fl=1", "-o", output_file, "-of", "csv"
         ]
         subprocess.run(cmd)
